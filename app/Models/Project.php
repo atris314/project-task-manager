@@ -23,7 +23,7 @@ class Project extends Model
         return [
             'start_date' => 'date',
             'end_date' => 'date',
-            'status'=>ProjectStatus::class
+            'status' => ProjectStatus::class
         ];
     }
     public function tasks()

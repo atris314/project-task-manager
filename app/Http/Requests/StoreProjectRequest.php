@@ -25,7 +25,8 @@ class StoreProjectRequest extends FormRequest
             'title'=>'required|string|max:190',
             'description'=>'nullable|string',
             'assigned_to'=>'nullable|exists:users,id',
-            'status'=>'nullable|in:todo,doing,done,blocked',
+            'start_date'=> 'nullable',
+            'end_date'=> 'nullable',
         ];
     }
     public function messages(): array
